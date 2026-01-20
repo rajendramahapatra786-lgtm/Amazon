@@ -755,3 +755,116 @@ body {
     color: #999;
 }
 
+/* ============================= */
+/*  MOBILE DEVICES (max 768px) */
+/* ============================= */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .navbar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px;
+    justify-content: space-between;
+  }
+
+  .nav-logo img {
+    height: 40px;
+    width: auto;
+  }
+
+  .nav-address,
+  .nav-return,
+  .nav-singin {
+    display: none; /* hide extra items */
+  }
+
+  .nav-search {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  /* Panel */
+  .pannel {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 8px;
+  }
+
+  .panel-ops {
+    display: none; /* hide long menu */
+  }
+
+  /* Hero */
+  .hero-section {
+    height: 160px;
+    background-position: center;
+  }
+
+  /* Cards sections */
+  .first-container,
+  .second-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  /* Carousel */
+  .carousel-page {
+    flex-wrap: nowrap;
+  }
+
+  .bike-card {
+    flex: 1 0 70%;
+  }
+
+  /* Products scroll */
+  .product {
+    min-width: 140px;
+    height: 140px;
+  }
+
+  /* Footer */
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .amazon-bar {
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 10px;
+  }
+
+  .bar-right {
+    justify-content: center;
+  }
+}
+
+/* ============================= */
+/*  TABLET (769px–1024px) */
+/* ============================= */
+@media (max-width: 1024px) {
+
+  .nav-search {
+    width: 400px;
+  }
+
+  .panel-ops {
+    font-size: 0.75rem;
+  }
+
+  .first-container,
+  .second-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
