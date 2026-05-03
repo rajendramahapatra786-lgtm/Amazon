@@ -328,7 +328,7 @@ body {
 /* Carousel */
 .carousel {
   display: flex;
-  overflow-x: auto;
+  overflow-x: hidden;   /* CHANGE THIS */
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   gap: 16px;
@@ -340,6 +340,7 @@ body {
   gap: 16px;
   min-width: 100%;
   scroll-snap-align: start;
+  position: relative;   /* ADD THIS (for arrows) */
 }
 
 /* Bike cards */
@@ -387,11 +388,11 @@ body {
 }
 
 .nav-btn.left {
-  left: -18px;
+  left: 10px;   /* instead of -18px */
 }
 
 .nav-btn.right {
-  right: -18px;
+  right: 10px;
 }
 
 .nav-btn:hover {
